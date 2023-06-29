@@ -64,7 +64,7 @@ headerbar {
 }
 
 .gtkstyle-fallback:disabled {
-  color: @fg_a;
+  color: @grey;
   background-color: @dark_grey;
 }
 
@@ -96,7 +96,7 @@ iconview:backdrop:disabled,
 .view text:backdrop:disabled,
 iconview text:backdrop:disabled,
 textview text:backdrop:disabled {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 .view:disabled,
@@ -104,7 +104,7 @@ iconview:disabled,
 .view text:disabled,
 iconview text:disabled,
 textview text:disabled {
-  color: @fg_a;
+  color: @grey;
   background-color: @dark_grey;
 }
 
@@ -181,11 +181,11 @@ label selection {
 }
 
 label:disabled {
-  color: @fg_a;
+  color: @grey;
 }
 
 label:disabled:backdrop {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 label:backdrop {
@@ -322,7 +322,7 @@ entry:focus {
 
 spinbutton:disabled:not(.vertical),
 entry:disabled {
-  color: @fg_a;
+  color: @grey;
   border-color: #1b1b1b;
   background-color: @dark_grey;
   box-shadow: none;
@@ -339,7 +339,7 @@ entry:backdrop {
 
 spinbutton:backdrop:disabled:not(.vertical),
 entry:backdrop:disabled {
-  color: #5b5b5b;
+  color: @grey;
   border-color: #202020;
   background-color: @dark_grey;
   box-shadow: none;
@@ -668,7 +668,7 @@ button {
   outline-color: rgba(238, 238, 236, 0.3);
   border-color: #1b1b1b;
   border-bottom-color: #070707;
-  background-color: @bg_a;
+  /* background-color: @bg_a; */
 }
 
 button label {
@@ -764,7 +764,11 @@ button:backdrop:checked {
   border-color: #202020;
   color: @fg_a;
   background-color: @bg_c;
-  }
+}
+
+button:checked {
+  background-color: @bg_c;
+}
 
 notebook>header>tabs>arrow:backdrop:active label,
 button.sidebar-button:backdrop:active label,
@@ -825,7 +829,7 @@ button:backdrop.flat:disabled label,
 button:backdrop.flat:disabled,
 button:backdrop:disabled label,
 button:backdrop:disabled {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 notebook>header>tabs>arrow:backdrop:disabled:active,
@@ -843,7 +847,7 @@ button:backdrop.flat:disabled:checked,
 button:backdrop:disabled:active,
 button:backdrop:disabled:checked {
   border-color: #202020;
-  background-image: image(@fg_a);
+  background-image: image(@dark_grey);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 
@@ -861,7 +865,7 @@ button:backdrop.flat:disabled:active label,
 button:backdrop.flat:disabled:checked label,
 button:backdrop:disabled:active label,
 button:backdrop:disabled:checked label {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 notebook>header>tabs>arrow:backdrop,
@@ -900,7 +904,7 @@ notebook>header>tabs>arrow:disabled,
 button.titlebutton:disabled,
 button:disabled label,
 button:disabled {
-  color: @fg_a;
+  color: @grey;
 }
 
 notebook>header>tabs>arrow:disabled:active,
@@ -926,7 +930,7 @@ button:disabled:active label,
 button:disabled:active,
 button:disabled:checked label,
 button:disabled:checked {
-  color: @fg_a;
+  color: @grey;
 }
 
 notebook>header>tabs>arrow.image-button,
@@ -1329,7 +1333,7 @@ button.suggested-action:backdrop:disabled label,
 button.suggested-action:backdrop:disabled,
 button.suggested-action.flat:backdrop:disabled label,
 button.suggested-action.flat:backdrop:disabled {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 .selection-mode button.titlebutton:backdrop:disabled:active,
@@ -1548,7 +1552,7 @@ button.destructive-action:backdrop:disabled label,
 button.destructive-action:backdrop:disabled,
 button.destructive-action.flat:backdrop:disabled label,
 button.destructive-action.flat:backdrop:disabled {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 button.destructive-action:backdrop:disabled:active,
@@ -1589,7 +1593,7 @@ button.destructive-action:disabled {
 
 button.destructive-action:disabled label,
 button.destructive-action:disabled {
-  color: @fg_a;
+  color: @grey;
 }
 
 button.destructive-action:disabled:active,
@@ -1823,7 +1827,7 @@ stacksidebar row.needs-attention>label:dir(rtl) {
 
 .inline-toolbar toolbutton>button:disabled label,
 .inline-toolbar toolbutton>button:disabled {
-  color: @fg_a;
+  color: @grey;
 }
 
 .inline-toolbar toolbutton>button:disabled:active,
@@ -1837,7 +1841,7 @@ stacksidebar row.needs-attention>label:dir(rtl) {
 .inline-toolbar toolbutton>button:disabled:active,
 .inline-toolbar toolbutton>button:disabled:checked label,
 .inline-toolbar toolbutton>button:disabled:checked {
-  color: @fg_a;
+  color: @grey;
 }
 
 .inline-toolbar toolbutton>button:backdrop {
@@ -1877,19 +1881,19 @@ stacksidebar row.needs-attention>label:dir(rtl) {
 
 .inline-toolbar toolbutton>button:backdrop:disabled label,
 .inline-toolbar toolbutton>button:backdrop:disabled {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 .inline-toolbar toolbutton>button:backdrop:disabled:active,
 .inline-toolbar toolbutton>button:backdrop:disabled:checked {
   border-color: #202020;
-  background-image: image(@fg_a);
+  background-image: image(@dark_grey);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 
 .inline-toolbar toolbutton>button:backdrop:disabled:active label,
 .inline-toolbar toolbutton>button:backdrop:disabled:checked label {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 toolbar.inline-toolbar toolbutton>button.flat,
@@ -2342,11 +2346,11 @@ spinbutton:not(.vertical) button:dir(rtl):first-child {
 }
 
 spinbutton.vertical:disabled {
-  color: @fg_a;
+  color: @grey;
 }
 
 spinbutton.vertical:backdrop:disabled {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 spinbutton.vertical:drop(active) {
@@ -2866,7 +2870,7 @@ headerbar.selection-mode button:disabled {
 .selection-mode headerbar button:disabled,
 headerbar.selection-mode button:disabled label,
 headerbar.selection-mode button:disabled {
-  color: #8ca6c6;
+  color: @grey;
 }
 
 .selection-mode .titlebar:not(headerbar) button:disabled:active,
@@ -2965,7 +2969,7 @@ headerbar.selection-mode button.suggested-action:disabled {
 .selection-mode headerbar button.suggested-action:disabled,
 headerbar.selection-mode button.suggested-action:disabled label,
 headerbar.selection-mode button.suggested-action:disabled {
-  color: @fg_a;
+  color: @grey;
 }
 
 .selection-mode .titlebar:not(headerbar) button.suggested-action:backdrop,
@@ -2973,7 +2977,7 @@ headerbar.selection-mode button.suggested-action:disabled {
 .selection-mode headerbar button.suggested-action:backdrop,
 headerbar.selection-mode button.suggested-action:backdrop {
   border-color: #202020;
-  background-image: image(@bg_a);
+  background-image: image(@dark_grey);
   text-shadow: none;
   -gtk-icon-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
@@ -3011,7 +3015,7 @@ headerbar.selection-mode button.suggested-action:backdrop:disabled {
 .selection-mode headerbar button.suggested-action:backdrop:disabled,
 headerbar.selection-mode button.suggested-action:backdrop:disabled label,
 headerbar.selection-mode button.suggested-action:backdrop:disabled {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 .selection-mode .titlebar:not(headerbar) .selection-menu:backdrop,
@@ -3367,7 +3371,7 @@ treeview.view:selected {
 }
 
 treeview.view:disabled {
-  color: @fg_a;
+  color: @grey;
 }
 
 treeview.view:disabled:selected {
@@ -3379,7 +3383,7 @@ treeview.view:disabled:selected:backdrop {
 }
 
 treeview.view:disabled:backdrop {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 treeview.view.separator {
@@ -3537,7 +3541,7 @@ treeview.view header button:active {
 }
 
 treeview.view header button:disabled {
-  border-color: @bg_a;
+  border-color: @grey;
   background-image: none;
 }
 
@@ -3550,7 +3554,7 @@ treeview.view header button:backdrop {
 }
 
 treeview.view header button:backdrop:disabled {
-  border-color: @bg_a;
+  border-color: @grey;
   background-image: none;
 }
 
@@ -3600,7 +3604,7 @@ menubar>menuitem:hover,
 
 menubar>menuitem:disabled,
 .menubar>menuitem:disabled {
-  color: @fg_a;
+  color: @grey;
   box-shadow: none;
 }
 
@@ -3653,13 +3657,13 @@ menu menuitem:hover,
 menu menuitem:disabled,
 .menu menuitem:disabled,
 .context-menu menuitem:disabled {
-  color: @fg_a;
+  color: @grey;
 }
 
 menu menuitem:disabled:backdrop,
 .menu menuitem:disabled:backdrop,
 .context-menu menuitem:disabled:backdrop {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 menu menuitem:backdrop,
@@ -4032,7 +4036,7 @@ notebook>header tab:backdrop:checked {
 
 notebook>header tab:backdrop:checked.reorderable-page {
   border-color: #202020;
-  background-color: @bg_a;
+  background-color: @bg_b;
 }
 
 notebook>header tab button.flat {
@@ -4380,7 +4384,7 @@ switch:checked {
 }
 
 switch:disabled {
-  color: @fg_a;
+  color: @grey;
   border-color: #1b1b1b;
   background-color: @dark_grey;
   text-shadow: none;
@@ -4400,7 +4404,7 @@ switch:backdrop:checked {
 }
 
 switch:backdrop:disabled {
-  color: #5b5b5b;
+  color: @grey;
   border-color: #202020;
   background-color: @dark_grey;
 }
@@ -4448,7 +4452,7 @@ switch:disabled slider {
 
 switch:disabled slider label,
 switch:disabled slider {
-  color: @fg_a;
+  color: @grey;
 }
 
 switch:backdrop slider {
@@ -4479,7 +4483,7 @@ switch:backdrop:disabled slider {
 
 switch:backdrop:disabled slider label,
 switch:backdrop:disabled slider {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 /************************* Check and Radio items * */
@@ -4677,7 +4681,7 @@ check:disabled label,
 check:disabled,
 radio:disabled label,
 radio:disabled {
-  color: @fg_a;
+  color: @grey;
 }
 
 check:backdrop,
@@ -4710,7 +4714,7 @@ check:backdrop:disabled label,
 check:backdrop:disabled,
 radio:backdrop:disabled label,
 radio:backdrop:disabled {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 .osd check,
@@ -4862,12 +4866,12 @@ treeview.view radio:selected {
 
 treeview.view check:selected:disabled,
 treeview.view radio:selected:disabled {
-  color: @fg_a;
+  color: @grey;
 }
 
 treeview.view check:selected:disabled:backdrop,
 treeview.view radio:selected:disabled:backdrop {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 treeview.view check:backdrop:selected,
@@ -5091,7 +5095,7 @@ scale slider:disabled {
 
 scale slider:disabled label,
 scale slider:disabled {
-  color: @fg_a;
+  color: @grey;
 }
 
 scale slider:backdrop {
@@ -5118,7 +5122,7 @@ scale slider:backdrop:disabled {
 
 scale slider:backdrop:disabled label,
 scale slider:backdrop:disabled {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 row:selected scale slider:disabled,
@@ -6241,7 +6245,7 @@ expander title>arrow:disabled {
 }
 
 expander title>arrow:disabled:backdrop {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 expander title>arrow:checked {
@@ -6287,7 +6291,7 @@ calendar.highlight {
 }
 
 calendar.highlight:backdrop {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 calendar:backdrop {
@@ -6419,7 +6423,7 @@ placessidebar row:selected {
 }
 
 placessidebar row:disabled {
-  color: @fg_a;
+  color: @grey;
 }
 
 placessidebar row:backdrop {
@@ -6431,7 +6435,7 @@ placessidebar row:backdrop:selected {
 }
 
 placessidebar row:backdrop:disabled {
-  color: #5b5b5b;
+  color: @grey;
 }
 
 placessidebar row image.sidebar-icon:dir(ltr) {
@@ -6692,7 +6696,7 @@ infobar.warning button:disabled label,
 infobar.warning button:disabled,
 infobar.error button:disabled label,
 infobar.error button:disabled {
-  color: #8ca6c6;
+  color: @grey;
 }
 
 infobar.info button:backdrop,
@@ -7415,7 +7419,7 @@ text/foreground color of selections on backdrop windows */
 @define-color theme_unfocused_selected_fg_color @fg_a;
 /*
 insensitive color on backdrop windows*/
-@define-color unfocused_insensitive_color #5b5b5b;
+@define-color unfocused_insensitive_color @grey;
 /*
 widgets main borders color */
 @define-color borders #1b1b1b;

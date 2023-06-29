@@ -10,5 +10,7 @@
 @define-color accent_light #BDBDDB;
 
 @define-color dark_grey #262626;
+@define-color light_grey #DCDCE0;
+@define-color grey #7A7A7D;
 
 @import url("gtk-slim.css");
